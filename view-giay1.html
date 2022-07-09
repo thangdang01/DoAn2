@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="view-giay1.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <title>View</title>
+</head>
+<body>
+    <div class="all">
+        <div class="banner">
+            <ul>
+                <li><i class="fa fa-map-marker" aria-hidden="true"></i><a href="https://www.google.com/maps/place/Li%C3%AAu+X%C3%A1,+Y%C3%AAn+M%E1%BB%B9,+H%C6%B0ng+Y%C3%AAn/@20.9157511,106.0402353,14z/data=!3m1!4b1!4m5!3m4!1s0x3135a4a22ece172b:0x9a580596230ab2b6!8m2!3d20.9149379!4d106.0610787"> Liêu Xá, Yên Mỹ, Hưng Yên</a></li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i><a href="0353866145"> 0353866145</a></p></li>
+            </ul>
+            </div>
+            <div class="box">
+                <ul>
+                    <li><a href="https://www.facebook.com/thangdang2000/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/login?lang=vi"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="login.html">Đăng Nhập</a><li></li> 
+                </ul>
+             </div>
+    </div>
+    <section class="menu-main">
+        <div class="header__menu">
+            <div class="menu-right" id="MenuRight">
+            <ul>
+                <li><a href="trangchu.html">Trang chủ</a></li>
+                <li><a href="giayadidas.html">Giày Adidas</a></li>
+                <li><a href="giaynike.html">Giày Nike</a></li>
+                <li><a href="giayjordan.html">Giày Jordan</a></li>
+                <li><a href="daygiay.html">Dây giày</a></li>
+                <li><a href="tintuc.html">Tin Tức</a></li>
+                <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                <li><a href="lienhe.html">Liên Hệ</a></li>
+                <li><a href="giohang.html">Giỏ Hàng</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+          </div> 
+        </div>
+    </section>
+    <script src="doan.js" ></script>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("MenuRight");
+              debugger;
+              if (x.className === "menu-right") {
+                x.className += " responsive";
+              } else {
+                x.className = "menu-right";
+              }
+            }
+            </script>
+             <section>
+                <div class="viewgiay">
+                    <div class="nav__viewgiay">
+                    <a href="trangchu.html" title="Go to Home page"><p>Trang chủ</p></a>
+                    </div>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <div class="nav__viewgiay">
+                        <a href="view-giay1.html"><p>Nike AF1 1 Black</p></a>
+                    </div>
+                </div>
+                <div class="nav-per">
+                    <p>Nike AF1 1 Black</p>
+                    <div class="danh-gia">
+                            <i class="fa fa-star" aria-hidden="true" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fa fa-star" aria-hidden="true" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fa fa-star" aria-hidden="true" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fa fa-star" aria-hidden="true" style="color: rgb(255, 217, 0);"></i>
+                            <i class="fa fa-star" aria-hidden="true" style="color: rgb(210,210,210);"></i>
+                        <span style="font-size: 12px;">20 đánh giá</span>
+                    </div>
+                </div>
+                <hr size="4px" width="82%" color="gray" style="margin-bottom: 20px; margin-left: 9%;">
+                <section id="main">
+                    <div class="div_slide">
+                        <div class="img_product">
+                            <div class="product_img_slide"><img src="/File ảnh/viewgiay01.png" style="width:100%"></div>               
+                            <div class="product_img_slide"><img src="/File ảnh/viewgiay02.png" style="width:100%"></div>               
+                            <div class="product_img_slide"><img src="/File ảnh/viewgiay03.png" style="width:100%"></div>                   
+                            <div class="product_img_slide"><img src="/File ảnh/viewgiay04.png" style="width:100%"></div>
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+                            <div class="img_row">
+                                <div class="img_column"><img class="img_down cursor" src="/File ảnh/viewgiay01.png" style="width:100%" onclick="currentSlide(1)" alt=""></div>
+                                <div class="img_column"><img class="img_down cursor" src="/File ảnh/viewgiay02.png" style="width:100%" onclick="currentSlide(2)" alt=""></div>
+                                <div class="img_column"><img class="img_down cursor" src="/File ảnh/viewgiay03.png" style="width:100%" onclick="currentSlide(3)" alt=""></div>
+                                <div class="img_column"><img class="img_down cursor" src="/File ảnh/viewgiay04.png" style="width:100%" onclick="currentSlide(4)" alt=""></div></div>
+                            </div>
+                    </div>
+                    <script>
+                        var slideIndex = 1;
+                        showSlides(slideIndex);
+                        
+                        function plusSlides(n) {
+                          showSlides(slideIndex += n);
+                        }
+                        
+                        function currentSlide(n) {
+                          showSlides(slideIndex = n);
+                        }
+                        
+                        function showSlides(n) {
+                          var i;
+                          var slides = document.getElementsByClassName("product_img_slide");
+                          var dots = document.getElementsByClassName("img_down");
+                          if (n > slides.length) {slideIndex = 1}
+                          if (n < 1) {slideIndex = slides.length}
+                          for (i = 0; i < slides.length; i++) {
+                              slides[i].style.display = "none";
+                          }
+                          for (i = 0; i < dots.length; i++) {
+                              dots[i].className = dots[i].className.replace(" active", "");
+                          }
+                          slides[slideIndex-1].style.display = "block";
+                          dots[slideIndex-1].className += " active";
+                          captionText.innerHTML = dots[slideIndex-1].alt;
+                        }
+                        </script>
+                        <div class="produc_shop_right">
+                            <div class="address">
+                                <p>Mua hàng từ:</p>
+                                <select name="Địa điểm" id="addess_filter">
+                                    <option value="#">Hưng Yên</option>
+                                    <option value="#">Hà Nội</option>
+                                    <option value="#">Bắc Ninh</option>
+                                </select>
+                            </div>
+                            <div class="price">
+                                <h2>1.500.000 ₫</h2>
+                                <p>Giá niêm yết: <span style="text-decoration:line-through ; color: gray;">2.990.000 ₫</span></p>
+                            </div>
+                            <div class="free_ship">
+                                <p>Mã SP: CJ0611 102</p>
+                            </div>
+                            <div class="option">
+                                <p><span style="font-size: 13px; font-weight: 600;">Kích cỡ</span></p>
+                                <div class="bao_box_option">
+                                    <div class="box_option">
+                                        <p><span style="font-weight: 600;">37</span></p>
+                                    </div>
+                                    <div class="box_option">
+                                        <p><span style="font-weight: 600;">38</span></p>
+                                    </div>
+                                    <div class="box_option">
+                                        <p><span style="font-weight: 600;">39</span></p>
+                                    </div>
+                                    <div class="box_option">
+                                        <p><span style="font-weight: 600;">40</span></p>
+                                    </div>
+                                    <div class="box_option">
+                                        <p><span style="font-weight: 600;">41</span></p>
+                                    </div>
+                                </div>
+                                <p><span style="font-size: 13px; font-weight: 600;">Màu sắc</span></p>
+                                <div class="bao_option_color">
+                                    <div class="box_option">
+                                        <p><span style="font-weight: 500;">Đen</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn_mua">
+                                <button id="themgiohang" onclick="addToCart({id:'01',image:'/File ảnh/giay3.jpg', price:1500000, name:'Nike AF1 1 Black'})">
+                                    Mua ngay
+                                    <span style="font-size: 13px;font-weight: 100;"><p>(Giao tận nơi hoặc lấy tại cửa hàng)</p></span>
+                                </button>
+                                <div class="note_mua">
+                                    <a href="#">Mua trực tiếp tại cửa hàng - Xem chi tiết</a>
+                                    <p>Liên hệ ngay: <span style="font-weight: 600;">0353866145</span> | <a href="#">Chat với tư vấn viên</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <script>
+                        function  addToCart(item) {
+                             item.quantity = 1;
+                             var list;
+                             if (localStorage.getItem('cart') == null) {
+                                 list = [item];
+                             } else {
+                                 list = JSON.parse(localStorage.getItem('cart')) || [];
+                             let ok = true;
+                             for (let x of list) {
+                                 if (x.id == item.id) {
+                                 x.quantity += 1;
+                                 ok = false;
+                                 break;
+                                 }
+                             }
+                             if(ok){
+                                 list.push(item); 
+                             } 
+                             }
+                             localStorage.setItem('cart', JSON.stringify(list));
+                             alert("Đã thêm vào giỏ hàng ");
+                         }
+                     </script>
+                    <hr size="4px" width="82%" color="gray" style="margin-bottom: 20px; margin-left: 9%;">
+                    <section id="mota_product">
+                        <div class="mota_trai">
+                            <div class="write_product">
+                                <header>Mô tả & đánh giá sản phẩm</header>
+                                <br>
+                                <p>Giày Nike Air Force 1 Shadow là một trong những sản phẩm mới nhất.
+                                    Với tất cả những ai đã sở hữu đôi giày Nike Air Force 1 Shadow đều khẳng định rằng chất lượng và mẫu mã mà nó mang lại là vô cùng tốt. Còn những người chưa từng sử dụng thì ấn tượng đầu tiên về nó cũng chính là thiết kế đẹp mắt, gọn gàng, màu sắc đẹp, trang nhã.</p>
+                                <br>
+                                <h4>HƯỚNG DẪN BẢO QUẢN</h4>
+                                <br>
+                                <p>Khử mùi bên trong giày
+                                    Bạn hãy đặt túi đựng viên chống ẩm vào bên trong giày để hút ẩm và rắc phấn rôm (có thể thay bằng cách đặt vào bên trong giày gói trà túi lọc chưa qua sử dụng) để khử mùi, giúp giày luôn khô thoáng.
+                                    Để hạn chế mùi hôi và sự ẩm ướt cho giày, hãy chọn vớ chân loại tốt, có khả năng thấm hút cao. Ngoài ra, dùng các loại lót giày khử mùi cũng là một phương pháp tốt.</p>
+                                <br>
+                                <img src="/File ảnh/phukien5.png" alt="" style="width: 60%; margin-left: 17%;">
+                                <br>
+                                <p>Bảo quản giày khi không sử dụng
+                                    Khi sử dụng giày, bạn đừng vội vứt hộp đi mà hãy cất lại để dành. Khi không sử dụng, hãy nhét một ít giấy vụn vào bên trong giày để giữ cho dáng giày luôn chuẩn, đẹp. Sau đó đặt giày vào hộp bảo quản cùng túi hút ẩm.</p>
+                                <br>
+                                <h4>Khảo sát chất lượng</h4>
+                                <br>
+                                <p>	
+                                    Chất lượng sản phẩm?
+                                    Sản phẩm luôn được SHOP kiểm định, đánh giá với chất lượng cao nhất trước khi đến tay khách hàng!
+                                    Thời gian giao hàng?
+                                    Chúng tôi sử dụng đơn vi vận chuyển uy tín và nhanh chóng nhất, thời dự kiến từ 1-4 ngày tuy khu vực. 
+                                    Sai màu sản phẩm?   
+                                    Vì 1 số yếu tố khách quan như độ sáng màn hình, chất lượng màn hình nên sản phẩm có thể ko đúng màu.
+                                    Thời gian làm việc?
+                                    Hệ thống cửa hàng và Online làm việc từ 8:30 - 22:00 hàng ngày.  
+                                    Hàng có sẵn không?
+                                    Sản phẩm hiện có sẵn tại hệ thống cửa hàng và online tại website.
+                                    </p>
+                                <br>
+                                <img src="/File ảnh/tintuc5.png" alt="" style="width: 60%; margin-left: 17%;">
+                                <br>
+                                <p>Đổi hàng như thế nào?
+                                    Việc đổi hàng rất dễ dàng và chúng tôi luôn muốn khách hàng ưng ý nhất. Hãy liên hệ fanpage để đổi!
+                                    Bảo hành sản phẩm
+                                    Sản phẩm được bảo hành trong 30 ngày với bất kỳ lỗi nào. Hàng SALE không được bảo hành.
+                                </p>
+                                <br>
+                                <img src="/File ảnh/tintuc3.png" alt="" style="width: 60%; margin-left: 17%;">  
+                                <p>Chọn sai size giày?
+                                    Bạn có thể qua cửa hàng hoặc gửi lại để đổi hàng với sản phẩm mới 100%. Còn nguyên tem mác, hoá đơn mua hàng.
+                                </p>              
+                            </div>
+                        </div>
+                    </section>
+            </section>
+</body>
+</html>

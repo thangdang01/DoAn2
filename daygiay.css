@@ -1,0 +1,360 @@
+@import"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+  html, body {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  .all
+  {
+      width: 100%;
+      height: 40px;
+      background-color:rgb(255,255,255);
+      position: sticky;
+      position: -webkit-sticky;
+  }
+  .banner{
+      position: absolute;
+      height: 30px;
+      width: 400px;
+      top: 5px;
+      left: 0px;
+      
+  }
+  .banner ul li{
+      display: inline-block;
+      color:black;
+      margin-left: 21px;
+  }
+  .banner a:hover {
+    color: rgb(255, 8, 8);
+    transform: scale(1.5);
+  }
+  .banner a{
+  text-decoration: none;
+  color: black;
+  }
+  .box{ 
+      height:40px;
+      width: 200px;
+      position: absolute;
+      top: 1px;
+      right:20px;
+  }
+  .box ul li {
+      display: inline-block;
+      color: black;
+      margin: 2px;
+  }
+  .box i:hover {
+      color: black;
+      transform: scale(1.5);
+  }
+  .box a {
+      color:black;
+      text-decoration: none;
+  }
+  .header__banner {
+      width: 100%;
+      height:100px;
+      background-color:rgb(255,255,255);
+  }
+  .header__banner img {
+      width: 200px;
+      height: 150px;
+      margin-top: -85px ;
+      margin-left: -400px;
+  }
+  .search-text {
+      width: 40%;
+      height: 40px;
+      background-color: none;
+      border-radius: none;
+      margin-left: 700px;
+  }
+  .search-text input {
+      width: 85%;
+      height: 38px;
+      border: none;
+      padding-left: 10px;
+      margin-top: 20px;
+      font-weight: 700;
+  }
+  .search-da {
+      float: right;
+      width: 15%;
+      height: 38px;
+      line-height: 38px;
+      text-align: center;
+      background-color: rgb(243,243,243);
+      margin-top: 20px;
+      border-radius: 0px 20px 20px 0px;
+  }
+  .search-text input:focus, .search-text input:active, .search-text input{
+      outline:0;
+      outline-style:none;
+      outline-width:0;
+      border-radius: 20px 0px 0px 20px;
+      background-color: rgb(243,243,243);
+  }
+  .menu-main {
+      position:-webkit-sticky;
+      position: sticky;
+      top: 0px;
+      z-index: 999;
+      background-color:rgb(255,255,255);
+      text-align: center;
+      font-family:"Roboto Condensed", sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+  }
+  .header__menu ul li {
+      display: inline-block;
+      width: 120px;
+      font-size: 20px; 
+      line-height: 3em;
+      border-bottom: inset rgb(255,255,255);
+  }
+  .header__menu ul li a {
+      font-weight:bolder;
+      color: black;
+      text-decoration: none;
+      text-transform: uppercase;
+  }
+  .header_menu ul li:hover a {
+    font-weight: bold;
+    padding-bottom: 2px; 
+  }
+.banner-img {
+  background-color: rgb(241,242,244);
+  width: 100%;
+  height: 300px;
+  text-align: center;
+}
+.banner-img span {
+    opacity: 0.8;
+    padding: 8px;
+    position: absolute;
+    top:20%;
+    left: 40%;
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.87);
+}
+.viewgiay{
+  width: 40%;
+  height: 30px;
+  margin-left: 42%;
+  display: flex;
+}
+.viewgiay a{
+  text-decoration: none;
+  padding-right: 5px;
+  color: rgba(24, 24, 24, 0.767);
+  font-weight: bold;
+  font-size: 13px;
+}
+.viewgiay i{
+  padding-left: 5px;
+  padding-right: 8px;
+  margin-top: 200px;
+}
+.nav__viewgiay{
+  padding-right: 5px;
+  margin-top: 200px;
+}
+.nav__viewgiay:hover a{
+  color: coral;
+  text-decoration: underline;
+}
+.header-gianhang h2 {
+    font-size: 30px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+.header-gianhang h2:hover {
+    color:rgba(255, 255, 0, 0.979);
+    transform:scale(1.1);
+}
+  .header-gianhang {
+    margin: 35%;
+    margin-left: 100px;
+    position: absolute;
+    margin-top: 5%;
+    position:-webkit-sticky;
+    position: sticky;
+  }
+  .header-gianhang img {
+    width: 100%;
+    height: 250px;
+  }
+  .header-gianhang button {
+    width: 130px;
+    height: 40px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: rgb(237,0,0);
+    color:#fff;
+  }
+  .overlay{
+    position: absolute;
+    bottom: 20%;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1; 
+    overflow: hidden;
+    width: 100%;
+    height: 0px;
+    font-size: 20px;
+    transition: .3s ease;
+    text-align: center;
+  }  
+  .zoom:hover .overlay {
+    height: 10%;
+  }
+  .gianhang {
+    padding-bottom: 10px;
+    display: flex;
+    border-bottom: 2px solid grey;
+  }
+  .header-gianhang p {
+    text-align: center;
+  }
+  .box-img:first-child {
+    padding-left: 10px;
+  }
+  .box-img {
+    padding-left: 10px;
+    padding-top: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-top:5%;  
+  }
+  .box-img .gianhang {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgb(254,215,0);
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+  }
+  .box-content:hover {
+    border: 1px solid rgba(128, 128, 128, 0.596);
+  }
+  .box-content {
+    font-size: 17px;
+    color: rgb(91,91,91); 
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+.box-content img {
+  width: 100%;    
+}
+.nav__gioithieu {
+  width:25%;
+  height: 100px;
+  position: absolute;
+  right:0;
+  margin: 1%;
+}
+.nav__image {
+  border-bottom: 1px solid grey;
+  text-align: center;
+}
+.nav__tintuc{
+  border-bottom: 1px solid grey;
+}
+.nav__tintuc ul li{
+  text-decoration: none;
+  list-style: none;
+  font-size: 16px;
+}
+.nav__tintuc img{
+  width: 20%; 
+  margin: 10%;
+  display: block;
+  margin-left: 2%;
+}
+.sanpham ul li{
+  text-decoration: none;
+  list-style: none;
+}
+.sanpham img {
+  width: 20%; 
+  margin: 10%;
+  display: block;
+  margin-left: 2%;
+}
+.content span{
+ position: absolute;
+ margin-top:-25%;
+ margin-left: 30% ;
+ font-weight: 600;
+ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.content span:hover{
+  color: rgb(255, 136, 0);
+}
+#thongtin {
+  width: 100%;
+  height: 800px;
+  border-top: 1px solid grey ;
+  display: flex;
+  padding: 60px 32px;
+  background: rgba(255, 255, 255, 0.021);
+  box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+}
+.nav__thongtin {
+  width: 800px;
+  height: 800px;
+}
+.nav__thongtin img {
+  margin-left: 20%;
+}
+.nav__thongtin p {
+  font-weight: bolder;
+  text-align: center;
+  color:rgb(0, 0, 0);
+}
+.nav__thongtin ul li {
+  list-style: none;
+  margin: 30px;
+  margin-left: 30%;
+  color:rgba(0, 0, 0, 0.534);
+}
+.header-hotro {
+  width: 1100px;
+  height: 800px;
+}
+.nav__hotro h3 {
+ margin-top: 150px;
+ text-align: center;
+ color:rgb(0, 0, 0);
+}
+.nav__hotro ul li {
+  list-style: none;
+  margin: 30px;
+  margin-left:-10px;
+  color:rgba(0, 0, 0, 0.534);
+}
+.header-dichvu {
+  width: 2000px;
+  height: 800px;
+}
+.nav__dichvu h3 {
+  margin-top: 150px;
+  text-align: center;
+  color:rgb(0, 0, 0);
+}
+.nav__dichvu ul li {
+  list-style: none;
+  color:rgba(0, 0, 0, 0.534);
+  margin: 50px;
+  margin-left: 20% ;
+}
+.nav__xemyoutube {
+  margin-top: 150px;
+}
+.nav__xemyoutube h3 {
+  color:rgb(0, 0, 0);
+}

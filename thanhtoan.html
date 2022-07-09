@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="thanhtoan.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="all">
+        <div class="banner">
+            <ul>
+                <li><i class="fa fa-map-marker" aria-hidden="true"></i><a href="https://www.google.com/maps/place/Li%C3%AAu+X%C3%A1,+Y%C3%AAn+M%E1%BB%B9,+H%C6%B0ng+Y%C3%AAn/@20.9157511,106.0402353,14z/data=!3m1!4b1!4m5!3m4!1s0x3135a4a22ece172b:0x9a580596230ab2b6!8m2!3d20.9149379!4d106.0610787"> Liêu Xá, Yên Mỹ, Hưng Yên</a></li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i><a href="0353866145"> 0353866145</a></p></li>
+            </ul>
+            </div>
+            <div class="box">
+                <ul>
+                    <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/login?lang=vi"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="login.html">Đăng Nhập</a><li></li> 
+                </ul>
+             </div>
+    </div>
+    <section class="menu-main">
+        <div class="header__menu">
+            <div class="menu-right" id="MenuRight">
+            <ul>
+                <li><a href="trangchu.html">Trang chủ</a></li>
+                <li><a href="giayadidas.html">Giày Adidas</a></li>
+                <li><a href="giaynike.html">Giày Nike</a></li>
+                <li><a href="giayjordan.html">Giày Jordan</a></li>
+                <li><a href="daygiay.html">Dây giày</a></li>
+                <li><a href="tintuc.html">Tin Tức</a></li>
+                <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                <li><a href="lienhe.html">Liên Hệ</a></li>
+                <li><a href="giohang.html">Giỏ Hàng</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+          </div> 
+        </div>
+    </section>
+    <script src="doan.js" ></script>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("MenuRight");
+              debugger;
+              if (x.className === "menu-right") {
+                x.className += " responsive";
+              } else {
+                x.className = "menu-right";
+              }
+            }
+            </script>
+    <section>
+        <div class="col-8 col-s-12 form-nhap">
+            <h1>THÔNG TIN THANH TOÁN</h1>
+            <form>
+                <div class="row" style="margin-top: 5px;">
+                    <div class="col-6 col-s-12">
+                        <label for="txt_hdem">Họ đệm <span id="s_hdem" style="color: red;">*</span> </label><br>
+                        <input id="txt_hdem" type="text">
+                    </div>
+                    <div class="col-6 col-s-12">
+                        <div style="margin-left: 5px;">
+                            <label for="txt_ten">Ten <span id="s_ten" style="color: red;">*</span> </label><br>
+                            <input id="txt_ten" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 5px;">
+                    <div class="col-12 col-s-12">
+                        <label for="slt_qgia">Quốc gia <span id="s_qgia" style="color: red;">*</span> </label><br>
+                        <select id="slt_qgia">
+                            <option value="VN">Việt Nam</option>
+                            <option value="TQ">Trung Quốc</option>
+                            <option value="US">Mỹ</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 5px;">
+                    <div class="col-12 col-s-12">
+                        <label for="txt_dchi">Địa chỉ:</label><br>
+                        <input type="text" id="txt_dchi">
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 5px;">
+                    <div class="col-12 col-s-12">
+                        <label for="txt_email">Email <span style="color: red;" id="s_email"> </span> </label><br>
+                        <input type="text" id="txt_email">
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top: 5px;">
+                    <div class="col-12 col-s-12">
+                        <label for="txt_dienthoai">Số điện thoại <span id="s_dienthoai"> </span></label><br>
+                        <input type="text" id="txt_dienthoai">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-4 col-s-12 from-thanhtoan">
+            <h1>ĐƠN HÀNG CỦA BẠN</h1>
+            <div class="row thanhtoan">
+                <div class="col-6 col-s-12" style="text-align: left;">
+                    <label>SẢN PHẨM</label>
+                </div>
+                <div class="col-6 col-s-12" style="text-align: right;">
+                    <label>TỔNG</label>
+                </div>
+            </div>
+            <div id="spham">
+
+            </div>
+            <!-- <div class="row thanhtoan">
+                <div class="col-6 col-s-12" style="text-align: left;">
+                    <label>Sản phẩm 1 * 1</label>
+                </div>
+                <div class="col-6 col-s-12" style="text-align: right;">
+                    <label>700,000đ</label>
+                </div>
+            </div>
+            <div class="row thanhtoan">
+                <div class="col-6 col-s-12" style="text-align: left;">
+                    <label>Sản phẩm 1 * 1</label>
+                </div>
+                <div class="col-6 col-s-12" style="text-align: right;">
+                    <label>700,000đ</label>
+                </div>
+            </div> -->
+            <div class="row thanhtoan">
+                <div class="col-6 col-s-12" style="text-align: left;">
+                    <label>Tổng</label>
+                </div>
+                <div class="col-6 col-s-12" style="text-align: right;">
+                    <label id="tt">0</label>đ
+                </div>
+            </div>
+            <div class="row thanhtoan">
+                <div class="col-12 col-s-12" style="text-align: left;">
+                    <button onclick="DatHang()">ĐẶT HÀNG</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

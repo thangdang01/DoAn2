@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lienhe.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Liên Hệ</title>
+</head>
+<body>
+    <div class="all">
+        <div class="banner">
+            <ul>
+                <li><i class="fa fa-map-marker" aria-hidden="true"></i><a href="https://www.google.com/maps/place/Li%C3%AAu+X%C3%A1,+Y%C3%AAn+M%E1%BB%B9,+H%C6%B0ng+Y%C3%AAn/@20.9157511,106.0402353,14z/data=!3m1!4b1!4m5!3m4!1s0x3135a4a22ece172b:0x9a580596230ab2b6!8m2!3d20.9149379!4d106.0610787"> Liêu Xá, Yên Mỹ, Hưng Yên</a></li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i><a href="0353866145"> 0353866145</a></p></li>
+            </ul>
+            </div>
+            <div class="box">
+                <ul>
+                    <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/login?lang=vi"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="login.html">Đăng Nhập</a><li></li> 
+                </ul>
+             </div>
+    </div>
+    <section class="menu-main">
+        <div class="header__menu">
+            <div class="menu-right" id="MenuRight">
+            <ul>
+                <li><a href="trangchu.html">Trang chủ</a></li>
+                <li><a href="giayadidas.html">Giày Adidas</a></li>
+                <li><a href="giaynike.html">Giày Nike</a></li>
+                <li><a href="giayjordan.html">Giày Jordan</a></li>
+                <li><a href="daygiay.html">Dây giày</a></li>
+                <li><a href="tintuc.html">Tin Tức</a></li>
+                <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                <li><a href="lienhe.html">Liên Hệ</a></li>
+                <li><a href="giohang.html">Giỏ Hàng</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+          </div> 
+        </div>
+    </section>
+    <script src="doan.js" ></script>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("MenuRight");
+              debugger;
+              if (x.className === "menu-right") {
+                x.className += " responsive";
+              } else {
+                x.className = "menu-right";
+              }
+            }
+            </script>
+        <div class="header__lienhe">
+            <h1>Liên hệ với Shop</h1>
+            <div class="nav__lienhe">
+                <form action="trangchu.html">
+                    <label for="fname"></label><br>
+                    <input type="text" id="fname" name="fname" placeholder="Họ và tên của bạn " required>
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email"placeholder="Nhập email của bạn" required>
+                    <label for="phone"></label><br><br>
+                    <input type="tel" id="phone" name="phone" placeholder="Số điện thoại của bạn"  ><br><br>
+                    <textarea type="elementor-field-textual elementor-field  elementor-size-sm" name="form_fields[message]" id="form-field-message" rows="4" placeholder="Nội dung bạn muốn nhắn gửi tới Shop" required></textarea>
+                    <button type="submit" value="Submit"><i>Gửi tới ý kiến cho Shop</i></button>
+                  </form>
+                <img src="/File ảnh/Ảnh chụp màn hình 2021-05-01 012624.png">
+            </div>
+        </div>
+        <section id="thongtin">
+            <div class="header-thongtin">
+                <div class="nav__thongtin">
+                    <div ></div>
+                    <img src="/File ảnh/attachment_112232329.png">
+                    <p>Hệ thống giày thể thao số 1 Hưng Yên</p>
+                    <ul>
+                        <li>Hotline 097.567.1080</li>
+                        <li>Store 1: Từu Phong , Quế Võ ,Bắc Ninh</li>
+                        <li>Store 2: Liêu Xá, Yên Mĩ ,Hưng Yên</li>
+                        <li>Store 3: Minh Đức , Mĩ Hào , Hưng Yên </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-hotro">
+                <div class="nav__hotro">
+                <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+                <ul>
+                    <li>7 cách bảo quản giày thể thao tốt nhất</li>
+                    <li>Giữ "phong độ" cho Sneaker trắng ra sao</li>
+                    <li>9 kỹ thuật làm đẹp dành cho U30</li>
+                </ul>
+             </div>
+            </div>
+            <div class="header-dichvu">
+                <div class="nav__dichvu">
+                <h3>DỊCH VỤ KHÁCH HÀNG</h3>
+                <ul>
+                    <li>Giới thiệu về Shop giày</li>
+                    <li>Hướng dẫn đặt hàng</li>
+                    <li>Chính sách đổi trả và bảo hành</li>
+                    <li>Chính sách bảo mật</li>
+                    <li>Liên hệ Shop</li>
+                    <a href="trangchu.html"><li>Hệ thống cửa hàng</li></a>
+                </ul>
+                </div>
+            </div>
+            <div class="header-youtube">
+            <div class="nav__xemyoutube">
+                <h3>XEM TRÊN YOUTUBE</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DnZi6X_KXVw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        </section>
+</body>
+</html>
